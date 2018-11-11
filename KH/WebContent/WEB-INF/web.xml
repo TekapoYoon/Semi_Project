@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>KH</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+   <servlet>
+  	<servlet-name>MemberController</servlet-name>
+  	<servlet-class>controller.MemberController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MemberController</servlet-name>
+  	<url-pattern>/MemberController</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>BbsController</servlet-name>
+  	<servlet-class>controller.BbsController</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>BbsController</servlet-name>
+  	<url-pattern>/BbsController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CalendarController</servlet-name>
+  	<servlet-class>controller.CalendarController</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+  	<servlet-name>CalendarController</servlet-name>
+  	<url-pattern>/CalendarController</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
